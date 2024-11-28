@@ -1,4 +1,100 @@
 body {
-    background-color: rgb(208, 191, 191);
-    color: rgb(104, 83, 83);
+    background-color: rgb(207, 199, 199);
+    color: 9F4576;
 }
+
+header {
+    text-align: center;
+}
+
+h1 {
+    background-color: rgb(249, 243, 243);
+    border: 3px solid;
+}
+
+h2 {
+    border: 1px solid;
+}
+
+h2, h3 {
+    background-color: rgb(184, 177, 177);
+    text-align: center;
+}
+.summary {
+    width: 40%;
+    float: left;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(227, 221, 221);
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border-radius: 5%;
+    padding: 5px;
+}
+
+.preamble {
+    width: 40%;
+    float: right;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(227, 221, 221);
+    margin-left: 5%;
+    margin-bottom: 5%;
+    border-radius: 5%;
+    padding: 5px;
+}
+
+.explanation {
+    width: 40%;
+    float: left;
+    border: 2px solid rgb(1, 0, 0);
+    background-color: rgb(227, 221, 221);
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border-radius: 5%;
+    padding: 5px;
+}
+
+.participation {
+    width: 40%;
+    float: right;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(227, 221, 221);
+    margin-left: 5%;
+    margin-bottom: 5%;
+    border-radius: 5%;
+    padding: 5px;
+}
+
+.benefits {
+    width: 40%;
+    float: left;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(227, 221, 221);
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border-radius: 5%;
+    padding: 5px;
+}
+
+.requirements {
+    width: 40%;
+    float: right;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(227, 221, 221);
+    margin-left: 5%;
+    margin-bottom: 5%;
+    border-radius: 5%;
+    padding: 5px;
+
+}
+
+.sidebar {
+    width: 40%;
+    float: left;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(227, 221, 221);
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border-radius: 5%;
+    padding: 5px;
+}
+
