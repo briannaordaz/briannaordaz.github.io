@@ -1,0 +1,110 @@
+body { /* body element (this targets all the elements, divs, classes, and id's within the body element */
+    background-color: rgb(207, 199, 199); /*This is the background color of the Webpage */
+    color: black; /* The color of the text*/
+}
+
+
+h1 { /* main heading */
+    background-color: rgb(249, 243, 243); /*background color for the main heading */
+    border: 3px solid; /* added a solid border of 3 pixels */
+    text-align: center; /* aligns the text of the main heading to the center*/
+    margin-top: 0; /* this will make the main heading stay at the top*/
+    margin-bottom: 5px; /*This will make the main heading have some space at the bottom  */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+h2 { /* second heading */
+    border: 1px solid; /* added a solid border of 2 pixels to the second heading */
+    text-align: center;  /*This will align the second heading to the center */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+    
+
+
+h2, h3 { /* second heading and sub headings */
+    background-color: rgb(184, 177, 177); /*background color for the second heading and other subheadings */
+    text-align: center; /* aligned the text of the headings to the center*/
+}
+
+p { /* paragraphs */
+
+    padding: 10px;/*this will add 10 pixels of space between the text and border*/
+    margin: 5px;
+}
+.page-wrapper {   /* main container for all the containers */
+    display: grid;  /*This gives the webpage a CSS grid layout */
+    grid-template-columns: 1fr 1fr; /* This tells the grid that there will be two equal columns*/
+    gap: 10px; /* This gives the columns a gap of 10 pixels*/
+    padding: 10px;  /* this will add space between the text and border*/
+    margin: 0;  /*this will not add space outside the border */
+    
+}
+
+
+
+
+.summary, .preamble, .explanation, 
+.participation, .benefits, .requirements, /*10 child containers and 1 parent container */
+.sidebar,  footer{  
+    border: 2px solid rgb(0, 0, 0);  /* this will give all the child containers a solid border of 2 pixels and the color black*/
+    background-color: rgb(227, 221, 221);  /*this will add color to the background of the containers */
+    border-radius: 5%; /* this will make the borders round */
+    margin: 5px; /* this will add space around/outside the containers */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.intro { /* parent container*/
+    display: grid; /*to make its child containers go next to each other I have to add a grid layout to it */
+    grid-column: 1 / span 2; /*this will take up two columns for its child containers */
+    gap: 10px; /* this will add a 10 pixel gap to the columns */
+    grid-template-columns: 1fr 1fr; /* This tells the grid layout to have two equal columns*/
+}
+header { /*child container of .intro (contains the main heading and second heading */
+    grid-column: 1 / span 2; /*This will make the header take up the two columns*/
+}
+.summary { /*child container of .intro */
+    grid-column: 1; /*This container will go on the first column */
+}
+
+.preamble { /* child container of .intro*/
+    grid-column: 2; /*this container will go on the second column */
+}
+
+#zen-supporting { /*parent container */
+    display: grid; /* since I want to put two child elements next to each other I have to make another grid layout, otherwise the child containers inside this parent container would get stacked*/
+    grid-column: 1 / span 2; /*this will make the container take up 2 columns */
+    gap: 10px; /* this will give the child containers of this container a 10 pixel gap*/
+    grid-template-columns: 2fr 2fr; /* I tried doing 2 equal columns but it didn't work (it kept making the child containers under this container overlap) so I did 4 equal columns instead */
+}
+
+.explanation { /*child container for #zen-supporting*/
+    grid-column: 1; /* This will put the child container on the first column under the .summary container*/
+    
+}
+
+.participation { /* child container for #zen-supporting*/
+    grid-column: 2; /* This container will go on the second column  */
+
+}
+
+.benefits { /*child container for #zen-supporting */
+    grid-column: 1; /* This will take up  the first column under .explanation*/
+    
+    
+}
+
+.requirements { /*child container for #zen-supporting */
+    grid-column: 2; /* This would take up the second column under participation */
+    
+}
+
+footer { /* child container for #zen-supporting*/
+    grid-column: 1 / span 2; /* this would take up 2 columns*/
+    
+}
+
+.sidebar { /* parent container */
+    grid-column: 1 / span 2; /*Since this is a parent container and its under the main container (which I set it to make two equal columns) this would have to take the two columns if I want to to take the whole width of its space*/
+
+}
+

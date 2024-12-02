@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(213, 202, 202); /* This is to add background color */
+    color: rgb(80, 66, 66);  /* This will add color to the text */
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+}
+
+.page-wrapper{ /*The whole page */
+    gap: 15px;
+    color: rgb(100, 87, 87);
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.intro {
+
+}
+
+.summary {
+    text-align: center;
+}
+
+.preamble {
+    float: center;
+}
+
+.sidebar {
+    float: left;
+}
