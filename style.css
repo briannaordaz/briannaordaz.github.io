@@ -1,34 +1,54 @@
-body {
+body { /*This will target the elements inside the body element */
     background-color: rgb(213, 202, 202); /* This is to add background color */
     color: rgb(80, 66, 66);  /* This will add color to the text */
-    padding: 0;
-    margin: 0;
+    padding: 0; /* this will set the  */
+    margin: 0; /* */
 }
 
-.header {
-    width: 100%;
-    text-align: center;
+ul {  /*This targets the unordered list */
+    list-style-type: none;  /*This removes the bullet points from the the list  */
+    padding: 0;  /*I set the padding to 0 so that the text can move to the left side of the screen*/
 }
+
 
 .page-wrapper{ /*The whole page */
-    gap: 15px;
-    color: rgb(100, 87, 87);
-    margin: 0 auto;
+    display: grid;  /* This will make the webpage have a css grid layout*/
+    grid-column: 1fr 1fr 1fr;  /* this tells the webpage that there should be three equal columns*/
+    gap: 15px;  /* this will add space between the columns*/
     padding: 20px;
-    max-width: 1200px;
+
+}
+.intro, #zen-supporting, .sidebar{
+    background-color: rgba(154, 150, 142, 0.207); /* this will add a transparent background color, 
+    the first number in the parenthesis represents the color red, since its on 154, it will have some red
+    the second number on the parenthesis represents the color green, and since its on 150, there will be some green
+    the third number represents the color blue, which has 142, so there will be some blue
+    and the last number represents the opacity (or transparency)this number could only go from 0 to 1 unlike the others
+    which go from 0 (0 being no color) to 255 (255 being the full color).
+    since the last number is 0.207 the color will be partially transparent  */
+    text-align: center; /* this will align the text to the middle*/
 }
 
 .intro {
-background-color: aliceblue;
-
-.summary {
-    text-align: center;
+    grid-column: 2; /* This container will go on the middle column*/
 }
 
-.preamble {
-    float: center;
+header {
+    border: 2px solid rgb(136, 125, 103);  /*this will add a solid border of two pixels*/
+    
 }
+
+
+#zen-supporting { 
+    grid-column: 3; /* This container will go on the right column */
+
+}
+
 
 .sidebar {
-    float: left;
+    grid-column: 1; /* This will make the sidebar go to the first column*/
+    grid-row: 1; /* this makes the sidebar go to the first row of the column, making it go to the top of the webpage*/
+
 }
+
+
